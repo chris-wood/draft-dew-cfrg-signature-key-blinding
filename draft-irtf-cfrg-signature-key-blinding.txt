@@ -5,12 +5,12 @@
 WG Working Group                                                F. Denis
 Internet-Draft                                               Fastly Inc.
 Intended status: Informational                                  E. Eaton
-Expires: 3 October 2024                           University of Waterloo
+Expires: 27 March 2025                            University of Waterloo
                                                               T. Lepoint
                                                                         
                                                               C. A. Wood
                                                         Cloudflare, Inc.
-                                                            1 April 2024
+                                                       23 September 2024
 
 
                    Key Blinding for Signature Schemes
@@ -61,7 +61,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 3 October 2024.
+   This Internet-Draft will expire on 27 March 2025.
 
 Copyright Notice
 
@@ -661,10 +661,9 @@ debca8af590ebb0fd7f1dd58a51a63aa45e5991fda32da0e7e9bb56b9374be6fed60c672
    [MSMHI15]  Morita, H., Schuldt, J., Matsuda, T., Hanaoka, G., and T.
               Iwata, "On the Security of the Schnorr Signature Scheme
               and DSA Against Related-Key Attacks", Springer
-              International Publishing, Information Security and
-              Cryptology - ICISC 2015 pp. 20-35,
-              DOI 10.1007/978-3-319-30840-1_2, ISBN ["9783319308395",
-              "9783319308401"], 2016,
+              International Publishing, Lecture Notes in Computer
+              Science pp. 20-35, DOI 10.1007/978-3-319-30840-1_2,
+              ISBN ["9783319308395", "9783319308401"], 2016,
               <https://doi.org/10.1007/978-3-319-30840-1_2>.
 
    [RATELIMITED]
