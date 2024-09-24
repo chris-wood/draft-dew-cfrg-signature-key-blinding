@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-09-29T02:42:00.829879+00:00",
+  "timestamp": "2024-09-24T00:44:42.050815+00:00",
   "repo": "cfrg/draft-irtf-cfrg-signature-key-blinding",
   "labels": [
     {
@@ -196,15 +196,15 @@
       "id": "I_kwDOGj2OAM5C4sqZ",
       "title": "Evaluate impact of Related-Key Attacks against ECDSA-BlindKeySign",
       "url": "https://github.com/cfrg/draft-irtf-cfrg-signature-key-blinding/issues/14",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "FredericJacobs",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "We need more security analysis on ECDSA-BlindKeySign and related functions. There might be some risks related to the blinding we need to dig deeper into.\r\n\r\n[This paper](https://eprint.iacr.org/2015/1135.pdf) Sec 4.2 doesn't directly translate to our scheme but it could be that similar attacks apply.",
       "createdAt": "2022-02-02T16:47:54Z",
-      "updatedAt": "2022-08-02T18:38:50Z",
-      "closedAt": null,
+      "updatedAt": "2024-04-01T16:08:59Z",
+      "closedAt": "2024-04-01T16:08:59Z",
       "comments": [
         {
           "author": "chris-wood",
@@ -240,6 +240,13 @@
           "body": "@tlepoint do you think we can close this?",
           "createdAt": "2022-08-02T18:38:50Z",
           "updatedAt": "2022-08-02T18:38:50Z"
+        },
+        {
+          "author": "chris-wood",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Closing.",
+          "createdAt": "2024-04-01T16:08:59Z",
+          "updatedAt": "2024-04-01T16:08:59Z"
         }
       ]
     },
@@ -513,6 +520,78 @@
       "updatedAt": "2022-07-11T15:55:47Z",
       "closedAt": "2022-07-11T15:55:47Z",
       "comments": []
+    },
+    {
+      "number": 40,
+      "id": "I_kwDOGj2OAM5dQF1M",
+      "title": "Draft is about to expire",
+      "url": "https://github.com/cfrg/draft-irtf-cfrg-signature-key-blinding/issues/40",
+      "state": "CLOSED",
+      "author": "jedisct1",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "The draft is about to expire.\r\n\r\nWe should tag a new version soon in order to keep it alive.",
+      "createdAt": "2023-01-31T15:10:10Z",
+      "updatedAt": "2023-01-31T15:23:34Z",
+      "closedAt": "2023-01-31T15:23:33Z",
+      "comments": [
+        {
+          "author": "chris-wood",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Done.",
+          "createdAt": "2023-01-31T15:23:33Z",
+          "updatedAt": "2023-01-31T15:23:33Z"
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "id": "I_kwDOGj2OAM58s68H",
+      "title": "Draft is expiring soon",
+      "url": "https://github.com/cfrg/draft-irtf-cfrg-signature-key-blinding/issues/41",
+      "state": "CLOSED",
+      "author": "jedisct1",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "The draft is expiring soon. We should at least bump the tag.",
+      "createdAt": "2024-01-20T16:44:55Z",
+      "updatedAt": "2024-01-22T22:10:00Z",
+      "closedAt": "2024-01-22T22:10:00Z",
+      "comments": [
+        {
+          "author": "jedisct1",
+          "authorAssociation": "COLLABORATOR",
+          "body": "There were only a couple minutes left before the draft would have expired.\r\n\r\nSo I went ahead and tagged version -05.",
+          "createdAt": "2024-01-22T22:09:59Z",
+          "updatedAt": "2024-01-22T22:09:59Z"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "id": "I_kwDOGj2OAM5-lOoV",
+      "title": "Key blinding spec should specify serialization scheme",
+      "url": "https://github.com/cfrg/draft-irtf-cfrg-signature-key-blinding/issues/42",
+      "state": "CLOSED",
+      "author": "cathieyun",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Currently, there is no serialization scheme specified for the messages being sent, or the test vectors. Specifying a serialization scheme is important for interoperability and correctness (eg using a constant-length serialization scheme if concatenating multiple serialized elements).\r\n\r\nThe OPRFs spec has a good example of serialization specifications, eg:\r\nhttps://cfrg.github.io/draft-irtf-cfrg-voprf/draft-irtf-cfrg-voprf.html#name-oprfp-384-sha-384\r\n",
+      "createdAt": "2024-02-07T19:06:47Z",
+      "updatedAt": "2024-04-01T20:29:21Z",
+      "closedAt": "2024-04-01T20:29:21Z",
+      "comments": [
+        {
+          "author": "chris-wood",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Fixed by #43.",
+          "createdAt": "2024-04-01T20:29:21Z",
+          "updatedAt": "2024-04-01T20:29:21Z"
+        }
+      ]
     }
   ],
   "pulls": [
@@ -982,7 +1061,7 @@
       "comments": [
         {
           "author": "tlepoint",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "body": "LGTM, thanks!",
           "createdAt": "2022-03-07T14:49:11Z",
           "updatedAt": "2022-03-07T14:49:11Z"
@@ -1045,7 +1124,7 @@
             "abbreviatedOid": "ecbe553"
           },
           "author": "tlepoint",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "state": "CHANGES_REQUESTED",
           "body": "",
           "createdAt": "2022-03-07T18:18:53Z",
@@ -1124,7 +1203,7 @@
             "abbreviatedOid": "ca15e2b"
           },
           "author": "tlepoint",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "state": "APPROVED",
           "body": "",
           "createdAt": "2022-03-07T19:10:08Z",
@@ -1174,7 +1253,7 @@
             "abbreviatedOid": "62272ec"
           },
           "author": "tlepoint",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "state": "APPROVED",
           "body": "",
           "createdAt": "2022-03-07T18:15:33Z",
@@ -1220,7 +1299,7 @@
             "abbreviatedOid": "62272ec"
           },
           "author": "tlepoint",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "state": "COMMENTED",
           "body": "",
           "createdAt": "2022-03-07T18:56:02Z",
@@ -1760,6 +1839,49 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 43,
+      "id": "PR_kwDOGj2OAM5rVg7D",
+      "title": "Add serialization details and update some references",
+      "url": "https://github.com/cfrg/draft-irtf-cfrg-signature-key-blinding/pull/43",
+      "state": "MERGED",
+      "author": "chris-wood",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "cc @cathieyun for :eyes:",
+      "createdAt": "2024-04-01T16:30:43Z",
+      "updatedAt": "2024-04-01T20:28:54Z",
+      "baseRepository": "cfrg/draft-irtf-cfrg-signature-key-blinding",
+      "baseRefName": "main",
+      "baseRefOid": "fcc2a3f1951eccecc56f80997e04f6cab3e10cc7",
+      "headRepository": "cfrg/draft-irtf-cfrg-signature-key-blinding",
+      "headRefName": "chris-wood-patch-1",
+      "headRefOid": "3258b9641e8dc949bdeff0579d1d2a2b46fbc391",
+      "closedAt": "2024-04-01T20:28:53Z",
+      "mergedAt": "2024-04-01T20:28:53Z",
+      "mergedBy": "chris-wood",
+      "mergeCommit": {
+        "oid": "c0ed609e2c8b3b8fdbd5edbdd960a768ff9cfeea"
+      },
+      "comments": [
+        {
+          "author": "cathieyun",
+          "authorAssociation": "NONE",
+          "body": "Thanks for adding more details on the serialization format, that should help avoid serialization inconsistencies going forward. LGTM",
+          "createdAt": "2024-04-01T18:07:58Z",
+          "updatedAt": "2024-04-01T18:07:58Z"
+        },
+        {
+          "author": "jedisct1",
+          "authorAssociation": "COLLABORATOR",
+          "body": "LGTM! These clarifications are useful.",
+          "createdAt": "2024-04-01T19:59:19Z",
+          "updatedAt": "2024-04-01T19:59:19Z"
+        }
+      ],
+      "reviews": []
     }
   ]
 }
